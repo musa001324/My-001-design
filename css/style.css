@@ -1,0 +1,147 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.topnav{
+    overflow: hidden;
+    background: black;
+    position: relative;
+    display: none;
+}
+.topnav #mylinks{
+    display: none;
+}
+.topnav a{
+    color: #fff;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 18px;
+   display: block;
+}
+.topnav a.icon{
+    background: red;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.topnav a:hover{
+    background: #ddd;
+    color: #000;
+}
+.topnav .active{
+    background-color: #04AA6D;
+    color: #fff;
+}
+/* End of mobile */
+
+nav{
+    background: #04AA6D;
+    height: 50px;
+}
+nav a{
+    padding: 0 16px;
+    text-decoration: none;
+    color: #ddd;
+    font-size: 18px;
+    line-height: 50px;
+}
+header{
+    height: 300px;
+    background-color: teal;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+main{
+    padding: 40px;
+}
+main p{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #606060;
+}
+.column{
+    display: flex;
+}
+.column .col1{
+    height: 300px;
+    width: 50%;
+    background: coral;
+}
+.column .col2{
+    width: 50%;
+    height: 300px;
+    background: gray;
+}
+section{
+    padding: 40px;
+}
+section h1{
+    color: green;
+}
+section p{
+    margin-bottom: 20px;
+    text-align: justify;
+    color: #606060;
+    line-height: 1.4;
+}
+.partition{
+    display: flex;
+}
+.partition .part1{
+    height: 300px;
+    width: 50%;
+    background: green;
+}
+.partition .part2{
+    height: 300px;
+    width: 50%;
+    background: red;
+}
+.partition .part3{
+    height: 300px;
+    width: 50%;
+    background: blue;
+}
+
+/* mobile responsive code */
+@media screen and (max-width:600px){
+    nav{
+        display: none;
+    }
+    .topnav{
+        display: block;
+    }
+    .column{
+        flex-direction: column;
+    }
+    .column .col1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .column .col2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .partition{
+        flex-direction: column;
+    }
+    .partition .part1{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .partition .part2{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .partition .part3{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}    
